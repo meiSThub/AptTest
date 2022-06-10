@@ -8,8 +8,12 @@ java {
 }
 
 dependencies {
-    api 'com.google.auto.service:auto-service:1.0-rc6'
+    // 注解处理器，自动注册开源库，因为要用到这个库到注解，所以首先要使用implementation
+    implementation 'com.google.auto.service:auto-service:1.0-rc6'
+    // 因为要处理注解，所以需要用 annotationProcessor 引用注解处理器
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc6'
+    // 生成代码开源库
     implementation 'com.squareup:javapoet:1.13.0'
+    // 注解module
     implementation project(":router-annotation")
 }

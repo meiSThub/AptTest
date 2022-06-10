@@ -11,12 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:onClick="second"
-        android:text="second" />
+        android:text="second"
+        android:textAllCaps="false" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:onClick="third"
-        android:text="third" />
+        android:text="third"
+        android:textAllCaps="false" />
 
 </LinearLayout>

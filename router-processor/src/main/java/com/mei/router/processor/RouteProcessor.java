@@ -36,7 +36,7 @@ import javax.tools.Diagnostic;
  * @desired
  */
 // 通过注解：AutoService，把注解处理器注册到java编译器中，那么在java编译到时候，java编译器就会回调该注解处理器
-@AutoService(Processor.class)
+// @AutoService(Processor.class)// 这里为了测试手动注册，所以把自动注册关闭了
 @SupportedAnnotationTypes({"com.mei.router.annotation.Route"})
 public class RouteProcessor extends AbstractProcessor {
 
